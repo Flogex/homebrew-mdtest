@@ -1,4 +1,4 @@
-class Duckdb < Formula
+class DuckdbAT13 < Formula
   desc "Embeddable SQL OLAP Database Management System"
   homepage "https://www.duckdb.org"
   url "https://github.com/duckdb/duckdb.git",
