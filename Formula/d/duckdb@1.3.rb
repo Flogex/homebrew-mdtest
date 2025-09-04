@@ -6,17 +6,6 @@ class DuckdbAT13 < Formula
       revision: "0b83e5d2f68bc02dfefde74b846bd039f078affa"
   license "MIT"
 
-  bottle do
-    rebuild 1
-    sha256 cellar: :any,                 arm64_sequoia: "c9532539855c59c223a90ee45476aa0dbe5cc2366c3d7d01bf909b2be0a0cf7a"
-    sha256 cellar: :any,                 arm64_sonoma:  "93fdfccdcb39f9411940712851867cf8f580fc1bebd0d2d46f18046a9c297060"
-    sha256 cellar: :any,                 arm64_ventura: "22ea67f016a8eaad512ac37c79d52c2b87223a47543c77bcbedd8b3e034b1c81"
-    sha256 cellar: :any,                 sonoma:        "2bbb88d67337ffb8d639df18694bd98b881a32a83f4dc9cd242936386f48b3fb"
-    sha256 cellar: :any,                 ventura:       "fc246c9c62101e2f336a46a1903d743ba06fd2003e0738ccbbb81cf962a5d39e"
-    sha256 cellar: :any_skip_relocation, arm64_linux:   "2aa63e022242d91f5653264d93d8258096b9e7a05aa9cae9fcb87abfdc7bd6b8"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "8a8b0732026466e3750117f7efdfe8c8c8787220741072cd65c16239a37afece"
-  end
-
   depends_on "cmake" => [:build, :test]
   uses_from_macos "python" => :build
 
